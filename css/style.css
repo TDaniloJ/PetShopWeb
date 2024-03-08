@@ -1,1 +1,172 @@
+:root {
+    --back-ground: #f1f1f1;
+    --color: #fff;
+    --color-header: #e0e0e0;
+    --color-submenu: #d6d6d8;
+    --color-button: #06c7e9;
+    --color-hover-button: #46ddf8;
+    --color-cadastro: #f1f3f3;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--back-ground);
+    font-size: 0.88rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: var(--color-header);   
+    height: 100px;
+    width: 100%;
+    color: var(--color);
+}
+
+.menu {
+    text-align: center;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
+.menu a {
+    color: var(--color);
+}
+
+.submenu {
+    display: inline;
+    background-color: var(--color-submenu);
+    padding: 15px 26px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submenu:hover {
+    background-color: #a5a5a5;
+    font-size: 16px;
+    transition: 2s;
+}
+
+.logo {
+    display: flex;
+    padding-top: 11px;
+    margin-left: 10px;
+}
+
+.logo img {
+    border-radius: 20px;
+}
+
+.barra-pesquisa {
+   margin-left: 190px;
+   margin-top: -50px;
+   outline: transparent;
+}
+
+.barra-pesquisa input {
+    padding: 11px 50px;
+}
+
+.barra-pesquisa button {
+    padding: 11px 20px;
+}
+
+.cadastro {
+    background-color: var(--color-cadastro);
+    color: black;
+    height: 50px;
+    width: 190px;
+    
+    float: right;
+    margin-top: -33px;
+    margin-right: 9px;
+}
+
+.cadastro p {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.destaque img {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.texto-produto {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: #ffffff;
+    height: 335px;
+    width: 210px;
+    margin: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.card:hover {
+    height: 360px;
+    width: 230px;
+    transition: 1s;
+}
+
+.card img {
+    margin: 10px;
+}
+
+.container {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.container, h3, p {
+    margin: 5px 5px;
+}
+
+.container button {
+    margin-top: 5px;
+    padding: 10px 18px;
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container button:hover {
+    background-color: var(--color-hover-button);
+}
+
+.card-info {
+    background-color: white;
+    height: 250px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.rodape {
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0;
+}
