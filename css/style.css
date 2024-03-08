@@ -1,11 +1,13 @@
 :root {
     --back-ground: #f1f1f1;
-    --color: #fff;
-    --color-header: #e0e0e0;
-    --color-submenu: #d6d6d8;
+    --color: #000000;
+    --color-header: #ffca39;
+    --color-submenu: #ffffff;
     --color-button: #06c7e9;
     --color-hover-button: #46ddf8;
     --color-cadastro: #f1f3f3;
+
+    --color-submenu-hover: #ffffffcb;
 }
 
 * {
@@ -51,12 +53,13 @@ header {
     padding: 15px 26px;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .submenu:hover {
-    background-color: #a5a5a5;
+    background-color: var(--color-submenu-hover);
     font-size: 16px;
-    transition: 2s;
+    transition: 1.2s;
 }
 
 .logo {
@@ -72,15 +75,17 @@ header {
 .barra-pesquisa {
    margin-left: 190px;
    margin-top: -50px;
-   outline: transparent;
 }
 
 .barra-pesquisa input {
     padding: 11px 50px;
+    border-radius: 10px;
+    outline: transparent;
 }
 
 .barra-pesquisa button {
     padding: 11px 20px;
+    border-radius: 5px;
 }
 
 .cadastro {
@@ -169,4 +174,8 @@ header {
     width: 100%;
     bottom: 0;
     padding: 10px 0;
+}
+
+.rodape a:hover{
+    text-decoration: underline;
 }
