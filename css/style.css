@@ -8,6 +8,7 @@
     --color-cadastro: #f1f3f3;
 
     --color-submenu-hover: #ffffffcb;
+    --color-boxshadow: #0000001c;
 }
 
 * {
@@ -151,7 +152,7 @@ header {
     margin: 10px;
     border-radius: 8px;
     display: inline-block;
-    box-shadow: 5px 5px #0000002a;
+    box-shadow: 5px 5px var(--color-boxshadow);
     margin-left: 35px;
 }
 
@@ -199,6 +200,7 @@ header {
     border-radius: 10px;
     margin: auto;
     margin-bottom: 15px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.185);
 }
 
 .rodape {
@@ -279,6 +281,12 @@ header {
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    .card-info {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
     }
 }
 
