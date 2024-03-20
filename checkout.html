@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,15 +59,30 @@
                         <option value="3">3</option>
                     </select>
                     
-                    <span>R$ 0,00</span>
+                    <span>R$ </span> <span id="valor1">175,40</span>
                 </div>
                 <hr>
+                <div class="produtoCar">
+                    <img src="images/Tapete_Higiênico_Super_Me.png" alt="produto">
+                    <span>Tapete Higiênico </span>
+                    
+                    <select id="quantidade">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    
+                    <span>R$ </span><span id="valor2"> 83,61</span>
+                </div>
+
+                <hr>
+                
                 <div class="produtoCar1">
                     <span class="spanCupom">5% OFF em Todas as Compras</span>
                     <button type="button" class="btn2">Atualizar Carrinho</button>
                 </div>
             </div>
-    
+    <!--
             <div class="frete">
                 <input type="text" id="cep" placeholder="CEP">
                 <button type="button">Buscar</button>
@@ -83,32 +98,42 @@
                     </div>
                 </div>
             </div>
-    
+    -->
         </section>
     
         <section class="sideContaint">
-            <h3>Resumo do pedido</h3>
+
 
             <div class="cupom">
                 <input type="text" name="" placeholder="Codigo do Cupom">
                 <button>Aplicar Cupom</button>
             </div>
 
+            <h3>Resumo do pedido</h3>
+
+
             <div class="resumo">
-                <span>Produtos</span> <span>R$ 0,00</span>
+
+                <span>Produtos</span> <span id="Produtos">R$ 0,00</span>
+                <br>
+                <span>Frete</span> <span id="Produtos">R$ 0,00</span>
                 <hr>
-                <span>Total</span> <span>R$ 0,00</span>
+                <span>Total</span> <span id="Total">R$ 0,00</span>
+                <br>
                 <button type="button">Fazer pedido</button>
-                <a href="#">Comprar mais produtos</a>
+
             </div>
     
             
         </section>
     </main>
 
-
+<!--
     <footer class="rodape">
         <p>&copy; Todos os Direitos Reservados 2024 a <span>Danilo Dias</span> | <a href="#">Politica de Privacidade</a> | <a href="#">Termos de Serviço</a> </p>
     </footer>
+-->
+
+    <script src="js/produtoResumo.js"></script>
 </body>
 </html>
