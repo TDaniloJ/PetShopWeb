@@ -8,7 +8,7 @@
     --color-cadastro: #f1f3f3;
 
     --color-submenu-hover: #ffffffcb;
-    --color-boxshadow: #0000001c;
+    --color-boxshadow: #0000002f;
 }
 
 * {
@@ -35,17 +35,19 @@ body {
 
 header {
     background-color: var(--color-header);   
-    height: 100px;
+    height: 150px;
     width: 100%;
     color: var(--color);
-    display: flex;
-    flex-direction: column;
 }
 
+/* MENU */
+
 .menu {
+    display: flex;
     text-align: center;
-    margin-left: 20px;
-    margin-top: -30px;
+    margin-left: -150px;
+    margin-top: 30px;
+    justify-content: center;
 }
 
 .menu a {
@@ -71,6 +73,35 @@ header {
     border: 2px solid lightblue;
 }
 
+/* FIM MENU */
+
+
+.MiniMenu {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    right: 0;
+    top: 0;
+    margin-right: 40px;
+    margin-top: -40px;
+    
+}
+
+.MiniMenu a {
+    font-weight: bold;
+}
+
+.MiniMenu img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: -6px;
+    margin-left: 6px;
+}
+
+.menuicon:hover {
+    text-decoration: underline;
+}
+
 .logo {
     display: flex;
     padding-top: 11px;
@@ -82,16 +113,19 @@ header {
 }
 
 .barra-pesquisa {
-   margin-left: 190px;
+   margin-left: 130px;
    margin-top: -50px;
+
 }
 
 .barra-pesquisa input {
-    padding: 13px 50px;
+    padding: 13px 240px;
     border-radius: 10px 0 0 10px;
     border: none;
     outline: none;
     cursor: pointer;
+    text-align: left;
+    margin: auto;
 }
 
 .barra-pesquisa button {
@@ -175,7 +209,7 @@ header {
     margin: 5px 5px;
 }
 
-.container button {
+.btn {
     margin-top: 6px;
     padding: 10px 18px;
     background-color: var(--color-button);
@@ -187,20 +221,20 @@ header {
     margin: auto;
 }
 
-.container button:hover {
+.btn:hover {
     background-color: var(--color-hover-button);
 }
 
 .card-info {
     background-color: white;
-    height: 250px;
+    height: 290px;
     width: 900px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
     margin: auto;
     margin-bottom: 15px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.185);
+    box-shadow: 5px 5px var(--color-boxshadow);
 }
 
 .rodape {
@@ -208,7 +242,7 @@ header {
     width: 100%;
     bottom: 0;
     padding: 10px 0;
-    position: relative;
+
 }
 
 .rodape a:hover{
@@ -232,11 +266,151 @@ header {
     margin-top: 2px;
 }
 
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato input{
+    width: 500px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contato button {
+    margin-top: 5px;
+    height: 60px;
+}
+
+/* Página Checkout */
+
+.main {
+    display: grid;
+    grid-template-columns: minmax(46%, 3fr) minmax(65%, 1.45fr);
+    gap: 2.4rem;
+    margin-top: 10px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container h3 {
+    margin-bottom: 15px;
+}
+
+.carrinho_produto {
+    background-color: #ffffff;
+    height: 32%;
+    width: 600px;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-top: -9px;
+}
+
+.sideContaint {
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.frete {
+    background-color: #ffffff;
+    height: 20%;
+    width: 600px;
+
+    margin-top: 15px;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+.produtos {
+    background-color: #ffffff;
+    height: 50%;
+    width: 600px;
+    
+    margin-top: 15px;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+.resumo {
+    background-color: #ffffff;
+    height: 60%;
+    width: 300px;
+}
+
+#quantidade {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.spanCupom {
+    margin-left: 10px;
+    background-color: rgb(39, 255, 32);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn2 {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #06c7e9;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    background-color: #06c7e9cb;
+}
+
+
+.produtoCar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtoCar input {
+    padding: 6px 2px;
+    margin: 10px;
+}
+
+.produtoCar img {
+    height: 100px;
+    margin: 20px;
+}
+
+.cupom {
+    background-color: #ffffff;
+    height: 200px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+/* Fim do Ckeckout */
+
+
+
 /* Resposividade */
 
 @media only screen and (min-width: 768px) {
     .menu {
-        width: 140%;
+        width: 120%;
+    }
+
+    .barra-pesquisa input{
+       padding: 13px 140px;;
     }
 
     .submenu {
@@ -263,11 +437,11 @@ header {
     }
 
     .barra-pesquisa, input, button {
-        margin-left: 50px;
+        margin-left: 30px;
     }
 
     .barra-pesquisa input {
-        padding: 11px 15px;
+        padding: 11px 16px;
     }
     
     .barra-pesquisa button {
@@ -292,7 +466,7 @@ header {
 
 @media only screen and (min-width: 601px) and (max-width: 767px) {
     .menu {
-        width: 140%;
+        width: 100%;
     }
 
     .submenu {
@@ -303,5 +477,9 @@ header {
         max-width: 100%;
         height: auto;
         box-sizing: border-box;
+    }
+
+    .barra-pesquisa, input, button {
+        margin-left: 90px;
     }
 }
