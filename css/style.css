@@ -242,7 +242,7 @@ header {
     width: 100%;
     bottom: 0;
     padding: 10px 0;
-
+    position: relative;
 }
 
 .rodape a:hover{
@@ -304,11 +304,12 @@ header {
 
 .carrinho_produto {
     background-color: #ffffff;
-    height: 32%;
+    height: 90%;
     width: 600px;
     margin-bottom: auto;
     margin-left: 20px;
     margin-top: -9px;
+    border-radius: 10px;
 }
 
 .sideContaint {
@@ -318,14 +319,13 @@ header {
     height: 100%;
 }
 
-.frete {
-    background-color: #ffffff;
-    height: 20%;
-    width: 600px;
+.produtoCar1 {
+    margin-top: 30px;
+    margin-left: 5px;
+}
 
-    margin-top: 15px;
-    margin-bottom: auto;
-    margin-left: 20px;
+.produtoCar1 button {
+    margin-top: -10px;
 }
 
 .produtos {
@@ -342,7 +342,13 @@ header {
     background-color: #ffffff;
     height: 60%;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
 }
+
+
 
 #quantidade {
     margin: 20px;
@@ -392,10 +398,25 @@ header {
 }
 
 .cupom {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
-    height: 200px;
+    height: 100px;
     width: 300px;
+    margin-top: 60px;
+}
+
+.cupom input {
+
+
+
+    padding: 10px;
+}
+
+.cupom button {
+    padding: 10px;
     margin-top: 10px;
+    margin-left: 30%;
 }
 
 /* Fim do Ckeckout */
