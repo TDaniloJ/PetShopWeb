@@ -13,6 +13,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrinho.css">
 </head>
 <body>
     <header>
@@ -26,7 +27,7 @@
 
         <div class="MiniMenu">
             <a href="#">
-                <img src="images/user.png" alt="User"> <label for="menuicon" class="menuicon">Entre ou Cadastre-se</label> 
+                <img src="images/user.png" alt="User"> <label for="menuicon" class="menuicon">Entre ou <br> Cadastre-se</label> 
             </a>
             <a href="#">
                 <img src="images/carrinho.png" alt="Carrinho">
@@ -50,20 +51,29 @@
             <h3>Produtos</h3>
             <div class="carrinho_produto">
                 <div class="produtoCar">
-                    <img src="images/racao.png" alt="produto">
+                    <div class="ImgLogo">
+                        <img src="images/racao.png" alt="produto" class="produtoImgLogo">
+                    </div>
+
                     <span>Nome do produto</span>
                     
-                    <select id="quantidade">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                    
-                    <span>R$ </span> <span id="valor1">175,40</span>
+                    <div class="quantidadePreco">
+                        <button type="button" class="botaoMenos"><img src="images/menos.png" alt="menos" class="botaoImg"></button>
+    
+                        <input type="text" id="quantidade" value="1">
+    
+                        <button type="button" class="botaoMais"><img src="images/mais.png" alt="menos" class="botaoImg"></button>
+                    </div>
+
+
+                    <span>R$ </span> <span id="valor1">175.40</span>
                 </div>
                 <hr>
                 <div class="produtoCar">
-                    <img src="images/Tapete_Higiênico_Super_Me.png" alt="produto">
+                    <div class="ImgLogo">
+                        <img src="images/Tapete_Higiênico_Super_Me.png" alt="produto" class="produtoImgLogo">
+                    </div>
+
                     <span>Tapete Higiênico </span>
                     
                     <select id="quantidade">
@@ -72,7 +82,7 @@
                         <option value="3">3</option>
                     </select>
                     
-                    <span>R$ </span><span id="valor2"> 83,61</span>
+                    <span>R$ </span><span id="valor2"> 83.61</span>
                 </div>
 
                 <hr>
@@ -82,12 +92,18 @@
                     <button type="button" class="btn2">Atualizar Carrinho</button>
                 </div>
             </div>
-    <!--
+   
+            <h3 class="freteTitulo">Frete</h3>
+
             <div class="frete">
-                <input type="text" id="cep" placeholder="CEP">
-                <button type="button">Buscar</button>
+                <input type="text" id="cepInput" placeholder="Informe o seu cep">
+                <button type="button" class="btn2" onclick="buscarEndereco()">Buscar</button>
+
+                <div class="infocep">
+                    <p id="endereco"></p>
+                </div>
             </div>
-    
+     <!--
             <div class="produtos">
                 <div class="card">
                     <img src="images/racao.png" alt="produto-card" width="90%">
@@ -103,24 +119,24 @@
     
         <section class="sideContaint">
 
+            <h3 class="titulocupom">Cupom de desconto</h3>
 
             <div class="cupom">
-                <input type="text" name="" placeholder="Codigo do Cupom">
-                <button>Aplicar Cupom</button>
+                <input type="text" name="cupom" placeholder="Codigo do Cupom">
+                <button type="button" class="btn2">Aplicar Cupom</button>
             </div>
 
             <h3>Resumo do pedido</h3>
 
-
             <div class="resumo">
 
-                <span>Produtos</span> <span id="Produtos">R$ 0,00</span>
-                <br>
-                <span>Frete</span> <span id="Produtos">R$ 0,00</span>
+                <span class="Nomepreco">Produtos</span> <span class="preco" id="produto"> 0,00</span>
                 <hr>
-                <span>Total</span> <span id="Total">R$ 0,00</span>
+                <span class="Nomepreco">Frete</span> <span class="preco" id="frete"> 0,00</span>
+                <hr>
+                <span class="Nomepreco">Total</span> <span class="preco" id="Total"> 0,00</span>
                 <br>
-                <button type="button">Fazer pedido</button>
+                <button type="button" class="btn2">Fazer pedido</button>
 
             </div>
     
@@ -135,5 +151,6 @@
 -->
 
     <script src="js/produtoResumo.js"></script>
+    <script src="js/buscaCep.js"></script>
 </body>
 </html>
