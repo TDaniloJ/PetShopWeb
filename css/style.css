@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
     --back-ground: #f1f1f1;
     --color: #000000;
@@ -14,7 +17,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -283,145 +286,6 @@ header {
     margin-top: 5px;
     height: 60px;
 }
-
-/* Página Checkout */
-
-.main {
-    display: grid;
-    grid-template-columns: minmax(46%, 3fr) minmax(65%, 1.45fr);
-    gap: 2.4rem;
-    margin-top: 10px;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container h3 {
-    margin-bottom: 15px;
-}
-
-.carrinho_produto {
-    background-color: #ffffff;
-    height: 90%;
-    width: 600px;
-    margin-bottom: auto;
-    margin-left: 20px;
-    margin-top: -9px;
-    border-radius: 10px;
-}
-
-.sideContaint {
-    float: right;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-}
-
-.produtoCar1 {
-    margin-top: 30px;
-    margin-left: 5px;
-}
-
-.produtoCar1 button {
-    margin-top: -10px;
-}
-
-.produtos {
-    background-color: #ffffff;
-    height: 50%;
-    width: 600px;
-    
-    margin-top: 15px;
-    margin-bottom: auto;
-    margin-left: 20px;
-}
-
-.resumo {
-    background-color: #ffffff;
-    height: 60%;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-
-    align-content: center;
-}
-
-
-
-#quantidade {
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.spanCupom {
-    margin-left: 10px;
-    background-color: rgb(39, 255, 32);
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.btn2 {
-    float: right;
-    margin-right: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #06c7e9;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-.btn2:hover {
-    cursor: pointer;
-    background-color: #06c7e9cb;
-}
-
-
-.produtoCar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.produtoCar input {
-    padding: 6px 2px;
-    margin: 10px;
-}
-
-.produtoCar img {
-    height: 100px;
-    margin: 20px;
-}
-
-.cupom {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    height: 100px;
-    width: 300px;
-    margin-top: 60px;
-}
-
-.cupom input {
-
-
-
-    padding: 10px;
-}
-
-.cupom button {
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 30%;
-}
-
-/* Fim do Ckeckout */
-
-
 
 /* Resposividade */
 
