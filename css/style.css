@@ -116,13 +116,13 @@ header {
 }
 
 .barra-pesquisa {
-   margin-left: 130px;
+   margin-left: 210px;
    margin-top: -50px;
-
 }
 
 .barra-pesquisa input {
-    padding: 13px 240px;
+    width: 100px;
+    padding: 13px 220px;
     border-radius: 10px 0 0 10px;
     border: none;
     outline: none;
@@ -171,9 +171,11 @@ header {
 }
 
 .destaque img {
-    width: 100%;
-    height: 500px;
+    width: 80%;
+    height: 80%;
     margin-top: 20px;
+    margin-left: 11%;
+    border-radius: 20px;
 }
 
 .texto-produto {
@@ -184,35 +186,34 @@ header {
 
 .card {
     background-color: #ffffff;
-    height: 335px;
-    width: 210px;
+    display: inline-flex;
+    height: 46%;
+    width: 21%;
     margin: 10px;
     border-radius: 8px;
-    display: inline-block;
     box-shadow: 5px 5px var(--color-boxshadow);
     margin-left: 35px;
 }
 
-.card:hover {
-    height: 360px;
-    width: 230px;
-    transition: 1s;
-}
-
-.card img {
+.cardImg {
     margin: 10px;
+    width: 90%;
 }
 
-.container {
+.containerCard {
     margin-top: 5px;
     margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
 }
 
-.container, h3, p {
+.containerCard, h3, p {
     margin: 5px 5px;
 }
 
-.btn {
+.btn-buy {
     margin-top: 6px;
     padding: 10px 18px;
     background-color: var(--color-button);
@@ -224,7 +225,7 @@ header {
     margin: auto;
 }
 
-.btn:hover {
+.btn-buy:hover {
     background-color: var(--color-hover-button);
 }
 
@@ -260,6 +261,10 @@ header {
 .seletor-foto {
     display: flex;
     justify-content: center;
+}
+
+.seletor-foto input[type="radio"]:hover {
+    cursor: pointer;
 }
 
 .seletor-foto input[type="radio"] {
@@ -306,6 +311,10 @@ header {
         max-width: 100%;
         height: auto;
     }
+
+    .container {
+        margin-left: -40%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -347,6 +356,9 @@ header {
         height: auto;
         margin: auto;
     }
+    .container {
+        margin-left: -10%;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 767px) {
@@ -366,5 +378,8 @@ header {
 
     .barra-pesquisa, input, button {
         margin-left: 90px;
+    }
+    .container {
+        margin-left: -40%;
     }
 }
