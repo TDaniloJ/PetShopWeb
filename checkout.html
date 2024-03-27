@@ -49,8 +49,8 @@
         <section class="container">
             <h2>Carrinho de Compras</h2>
             <h3>Produtos</h3>
-            <div class="carrinho_produto">
-                <div class="produtoCar">
+            <div class="carrinho_produto" id="produtos">
+                <div class="produtoCar" >
                     <div class="ImgLogo">
                         <img src="images/racao.png" alt="produto" class="produtoImgLogo">
                     </div>
@@ -65,24 +65,14 @@
                         <button type="button" class="botaoMais"><img src="images/mais.png" alt="menos" class="botaoImg"></button>
                     </div>
 
-
                     <span>R$ </span> <span id="valor1">175.40</span>
+
                 </div>
                 <hr>
-                <div class="produtoCar">
-                    <div class="ImgLogo">
-                        <img src="images/Tapete_Higiênico_Super_Me.png" alt="produto" class="produtoImgLogo">
-                    </div>
+                <div class="produtoCar" >
+                    <ul id="cart">
 
-                    <span>Tapete Higiênico </span>
-                    
-                    <select id="quantidade">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                    
-                    <span>R$ </span><span id="valor2"> 83.61</span>
+                    </ul>
                 </div>
 
                 <hr>
@@ -136,6 +126,7 @@
                 <hr>
                 <span class="Nomepreco">Total</span> <span class="preco" id="Total"> 0,00</span>
                 <br>
+                <button type="button" class="btn2"><a href="index.html">Continuar Comprado</a></button>
                 <button type="button" class="btn2">Fazer pedido</button>
 
             </div>
@@ -150,6 +141,8 @@
     </footer>
 -->
 
+    <script src="js/mostraCarrinho.js"></script>
+    <script src="js/adicionarCarrinho.js"></script>
     <script src="js/produtoResumo.js"></script>
     <script src="js/buscaCep.js"></script>
 </body>
