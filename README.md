@@ -1,2 +1,2 @@
 # PetShopWeb
-WebSite feito para petshop
+O WebSite esta sendo feito no para fins de estudo
