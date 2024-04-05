@@ -21,15 +21,18 @@
         </div>
         <div class="barra-pesquisa">
             <input type="text" name="procura" placeholder="Faça sua pesquisa aqui!!">
-            <button type="button" class="btn-buy">Procura</button>
+            <button type="button" class="btn-pesquisa"><img src="images/pesquisa.png"></button>
         </div>
 
         <div class="MiniMenu">
-            <a href="#">
-                <img src="images/user.png" alt="User"> <label for="menuicon" class="menuicon">Entre ou Cadastre-se</label> 
+            <a href="checkout.html" >
+                <i class="fundo-img">
+                    <img src="images/carrinho.png" alt="Carrinho">
+                </i>
             </a>
-            <a href="checkout.html">
-                <img src="images/carrinho.png" alt="Carrinho">
+            <a href="#">
+                <img src="images/user.png" alt="User"> 
+                <label for="menuicon" class="menuicon">Entre ou <br> Cadastre-se</label> 
             </a>
         </div>
 
@@ -51,20 +54,20 @@
         </div>
 
         <div class="seletor-foto">
-            <input type="radio" name="" checked>
-            <input type="radio" name="">
-            <input type="radio" name="">
+            <input type="radio" checked>
+            <input type="radio">
+            <input type="radio">
         </div>
 
         <h2 class="texto-produto">Produtos Em Destaque</h2>
 
         <div id="produto">
-            <div class="card" >
+            <div class="card">
                 <div class="containerCard">
                     <img src="images/racao.png" alt="produto-card" class="cardImg">
                     <h3>Ralçao Seca PremieR Pet Golden</h3>
-                    <p>Preço: R$ 175.40</p>
-                    <button type="button" class="btn-buy">Adicionar</button>
+                    <p> 175.40</p>
+                    <button type="button" class="btn-buy" onclick="adicionarCarrinho(event)">Adicionar</button>
                 </div>
             </div>
     

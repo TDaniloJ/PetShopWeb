@@ -22,17 +22,22 @@
         </div>
         <div class="barra-pesquisa">
             <input type="text" name="procura" placeholder="Faça sua pesquisa aqui!!">
-            <button type="button">Procura</button>
+            <button type="button" class="btn-pesquisa"><img src="images/pesquisa.png"></button>
         </div>
 
         <div class="MiniMenu">
-            <a href="#">
-                <img src="images/user.png" alt="User"> <label for="menuicon" class="menuicon">Entre ou <br> Cadastre-se</label> 
+            <a href="checkout.html" >
+                <i class="fundo-img">
+                    <img src="images/carrinho.png" alt="Carrinho">
+                </i>
             </a>
             <a href="#">
-                <img src="images/carrinho.png" alt="Carrinho">
+                <img src="images/user.png" alt="User"> 
+                <label for="menuicon" class="menuicon">Entre ou <br> Cadastre-se</label> 
             </a>
         </div>
+
+
 
         <nav class="menu">
             <ul>
@@ -43,6 +48,7 @@
                 <li class="submenu"><a href="produtos.html">Produtos</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main class="main">
@@ -55,24 +61,20 @@
                         <img src="images/racao.png" alt="produto" class="produtoImgLogo">
                     </div>
 
-                    <span>Nome do produto</span>
+                    <span>Ralçao Seca PremieR Pet Golden</span>
                     
                     <div class="quantidadePreco">
-                        <button type="button" class="botaoMenos"><img src="images/menos.png" alt="menos" class="botaoImg"></button>
-    
+
                         <input type="text" id="quantidade" value="1">
     
-                        <button type="button" class="botaoMais"><img src="images/mais.png" alt="menos" class="botaoImg"></button>
                     </div>
 
-                    <span>R$ </span> <span id="valor1">175.40</span>
+                    <span id="valor1">175.40</span>
 
                 </div>
                 <hr>
-                <div class="produtoCar" >
-                    <ul id="cart">
+                <div class="produtoCar" id="cart">
 
-                    </ul>
                 </div>
 
                 <hr>
