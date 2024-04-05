@@ -1,3 +1,17 @@
+:root {
+    --back-ground: #f1f1f1;
+    --color-primary: #fff;
+    --color: #000000;
+    --color-header: #ffca39;
+    --color-submenu: #ffffff;
+    --color-button: #06c7e9;
+    --color-hover-button: #46ddf8;
+    --color-cadastro: #f1f3f3;
+
+    --color-submenu-hover: #ffffffcb;
+    --color-boxshadow: #0000002f;
+}
+
 /* Página Checkout */
 
 .main {
@@ -7,6 +21,7 @@
     margin-top: 15px;
     margin: auto;
     margin-left: 21px;
+    background-color: var(--back-ground);
 }
 
 .container {
@@ -22,11 +37,11 @@
 }
 
 .carrinho_produto {
-    background-color: #ffffff;
+    background-color: var(--color-primary);
     height: 65%;
-    width: 600px;
+    width: 100%;
     margin-bottom: auto;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: -9px;
     border-radius: 10px;
 }
@@ -39,7 +54,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -42px;
+    margin-top: 0px;
     margin-left: -90%;
 }
 
@@ -53,7 +68,7 @@
 }
 
 .produtos {
-    background-color: #ffffff;
+    background-color: var(--color-primary);
     height: 50%;
     width: 600px;
     
@@ -63,17 +78,25 @@
 }
 
 #quantidade {
-    border: 1px solid black;
-    width: 140px;
+    border: 1px solid var(--color);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: -100px;
 }
 
 .resumo {
-    background-color: #ffffff;
+    background-color: var(--color-primary);
     height: 60%;
     width: 300px;
     display: flex;
     flex-direction: column;
     align-content: center;
+    border-radius: 10px;
+}
+
+.resumo a {
+    color: black;
 }
 
 .resumo span {
@@ -111,7 +134,7 @@
 
 .spanCupom {
     margin-left: 10px;
-    background-color: rgb(39, 255, 32);
+    background-color: #27ff20;
     padding: 5px;
     border-radius: 5px;
 }
@@ -140,18 +163,30 @@
     align-items: center;
 }
 
+.produtoCar span {
+    margin-right: 50px;
+    width: 90px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
 .produtoCar input {
-    width: 50px;
+    width: 10px;
+    height: 20px;
     text-align: center;
     margin-left: -10px;
     border: transparent;
 }
 
 .quantidadePreco {
+    display: flex;
     height: 50px;
     width: 110px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 #valor1 {
@@ -175,6 +210,7 @@
 
 .produtoImgLogo {
     height: 100px;
+    margin-right: 10px;
 }
 
 .ImgLogo {
@@ -192,8 +228,8 @@
 .cupom {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    height: 22%;
+    background-color: var(--color-primary);
+    height: 29%;
     width: 100%;
     margin-top: 60px;
     border-radius: 5px;
@@ -207,7 +243,7 @@
     border-radius: 5px;
 
     border: transparent;
-    background-color: rgba(235, 235, 235, 0.952);
+    background-color: #ebebebf3;
 }
 
 .cupom button {
@@ -224,7 +260,7 @@
 }
 
 .frete {
-    background-color: white;
+    background-color: var(--color-primary);
     height: 100px;
     width: 600px;
     margin-top: 2px;
